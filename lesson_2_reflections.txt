@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+you created a git repository now and it can track you changes. use git init to create the repository and git status to view it's status
+
