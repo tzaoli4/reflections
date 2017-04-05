@@ -1,0 +1,16 @@
+FC command line compare 2 files to find the difference between, 
+FC file1Name file2Name
+mac and linus used Diff -u file1name file2name
+
+version control is useful in code because it save old version of your program so you can restore your program to an early working version if you mess up.
+
+git clone urlAddress
+git manual commit allow user to save periodacially so their trace back their code.
+git commit save all files in the same repository
+git log , git diff , git log --stat
+git checkout filename ------- revert to prev file of code, making easier to find and fix bugs
+git init ------ create a new git repository
+git status ------- to view status of repository
+git reset "filename" ------ so commits wouldnt affect these files
+
+ls -a --------- to view hidden files 
