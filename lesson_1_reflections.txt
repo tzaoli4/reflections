@@ -4,13 +4,33 @@ mac and linus used Diff -u file1name file2name
 
 version control is useful in code because it save old version of your program so you can restore your program to an early working version if you mess up.
 
+vim text editor:
+ESC :wq enter ----- to save and exit
+
 git clone urlAddress
 git manual commit allow user to save periodacially so their trace back their code.
+git init ------ create a new git repository
+git add filename ------- add files that will be commited
+git reset filename ------ so commits wouldnt affect these files
 git commit save all files in the same repository
+git commit -m 'you message'
 git log , git diff , git log --stat
 git checkout filename ------- revert to prev file of code, making easier to find and fix bugs
-git init ------ create a new git repository
+git checkout master ------ retore to last commit
 git status ------- to view status of repository
-git reset "filename" ------ so commits wouldnt affect these files
-
+git diff ----- compare stageing area and working directory files
+git diff --staged ------ compare starging area and latest commit
+git branch ------- to view which branch of commit you are on
+git branch filename ------- branch out from the master branch from this point
+git branch -d filename --------- delete branch filename, will not delete commit only the branch label
+git log --graph --oneline branch1 branch2 ----- to view log more easily
+git checkout -b branchname -------- git branch newbranchname  and then git checkout newbranchname
+git merge file1 file2 ------- merge two file together
+git merge conflict , first must resolve conflict in code, then use git add filename and git commit to complete merge
+git show filename -------- show diff of filename from it parent file
+git remote -v
+git remote add origin "http" ------- add local repository to github
+git push remoteNAme branchNAme ------ update repository on github
+git pull remotename branchName ------ update local repository with merging if there are comflicting changes
+git fetch remoteName ------- update local w repository without merging
 ls -a --------- to view hidden files 
